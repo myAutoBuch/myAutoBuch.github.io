@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
   --primary: #1E88E5;
   --primary-dark: #1565C0;
@@ -39,20 +41,22 @@ a { color: inherit; text-decoration: none; }
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   font-weight: 700;
   font-size: 18px;
   color: var(--text);
 }
-.logo-img {
+.logo-icon {
+  display: inline-block;
   width: 40px;
   height: 40px;
+  min-width: 40px;
   border-radius: 8px;
+  background-color: var(--bg-card);
   background-image: url('assets/icon.png');
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  display: inline-block;
+  background-repeat: no-repeat;
 }
 .nav-links {
   display: flex;
@@ -87,9 +91,7 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   z-index: 2;
 }
-.hero-content {
-  max-width: 700px;
-}
+.hero-content { max-width: 700px; }
 .badge {
   display: inline-block;
   background: rgba(30, 136, 229, 0.2);
@@ -129,7 +131,7 @@ a { color: inherit; text-decoration: none; }
   flex-wrap: wrap;
 }
 .hero-usps span::before {
-  content: "OK ";
+  content: "\2713  ";
   color: var(--primary-light);
   font-weight: bold;
 }
@@ -166,19 +168,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 section { padding: 80px 0; }
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-.section-header h2 {
-  font-size: 36px;
-  margin-bottom: 12px;
-  font-weight: 700;
-}
-.section-header p {
-  color: var(--text-muted);
-  font-size: 18px;
-}
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-header h2 { font-size: 36px; margin-bottom: 12px; font-weight: 700; }
+.section-header p { color: var(--text-muted); font-size: 18px; }
 
 .features-grid {
   display: grid;
@@ -197,34 +189,21 @@ section { padding: 80px 0; }
   border-color: var(--primary);
 }
 .feature-icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   margin-bottom: 16px;
-  background: linear-gradient(135deg, rgba(30, 136, 229, 0.2), rgba(30, 136, 229, 0.05));
+  background: linear-gradient(135deg, rgba(30, 136, 229, 0.25), rgba(30, 136, 229, 0.08));
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--primary-light);
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
-.feature-icon[data-icon="car"]::before { content: "AUTO"; font-size: 11px; }
-.feature-icon[data-icon="bell"]::before { content: "TUEV"; font-size: 11px; }
-.feature-icon[data-icon="wrench"]::before { content: "PLAN"; font-size: 11px; }
-.feature-icon[data-icon="fuel"]::before { content: "TANK"; font-size: 11px; }
-.feature-icon[data-icon="camera"]::before { content: "FOTO"; font-size: 11px; }
-.feature-icon[data-icon="pdf"]::before { content: "PDF"; font-size: 11px; }
-.feature-icon[data-icon="shield"]::before { content: "VERS"; font-size: 11px; }
-.feature-icon[data-icon="lock"]::before { content: "PRIV"; font-size: 11px; }
-.feature-card h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-.feature-card p {
-  color: var(--text-muted);
-  font-size: 14px;
-}
+.feature-card h3 { font-size: 18px; margin-bottom: 8px; }
+.feature-card p { color: var(--text-muted); font-size: 14px; }
 
 .screenshots { background: var(--bg-secondary); }
 .screenshots-grid {
@@ -256,18 +235,10 @@ section { padding: 80px 0; }
   color: var(--text-muted);
   text-align: center;
 }
-.phone-mockup-small strong {
-  color: var(--primary-light);
-  font-size: 16px;
-}
-.phone-mockup-small small {
-  font-size: 12px;
-  margin-top: 8px;
-}
+.phone-mockup-small strong { color: var(--primary-light); font-size: 16px; }
+.phone-mockup-small small { font-size: 12px; margin-top: 8px; }
 
-.beta {
-  background: linear-gradient(135deg, #0A1428 0%, #0F2447 100%);
-}
+.beta { background: linear-gradient(135deg, #0A1428 0%, #0F2447 100%); }
 .beta-card {
   max-width: 700px;
   margin: 0 auto;
@@ -288,20 +259,10 @@ section { padding: 80px 0; }
   font-size: 14px;
   margin-bottom: 20px;
 }
-.beta-card h2 {
-  font-size: 32px;
-  margin-bottom: 16px;
-}
-.beta-card p {
-  color: var(--text-muted);
-  font-size: 16px;
-  margin-bottom: 28px;
-}
+.beta-card h2 { font-size: 32px; margin-bottom: 16px; }
+.beta-card p { color: var(--text-muted); font-size: 16px; margin-bottom: 28px; }
 
-.faq-list {
-  max-width: 800px;
-  margin: 0 auto;
-}
+.faq-list { max-width: 800px; margin: 0 auto; }
 .faq-item {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -329,20 +290,11 @@ section { padding: 80px 0; }
   color: var(--primary-light);
   transition: transform 0.2s;
 }
-.faq-item[open] summary::after {
-  transform: translateY(-50%) rotate(45deg);
-}
-.faq-item p {
-  padding: 0 20px 20px;
-  color: var(--text-muted);
-}
+.faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+.faq-item p { padding: 0 20px 20px; color: var(--text-muted); }
 
 .contact { background: var(--bg-secondary); }
-.contact-simple {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
+.contact-simple { max-width: 700px; margin: 0 auto; text-align: center; }
 .contact-card {
   background: var(--bg-card);
   padding: 50px 40px;
@@ -350,22 +302,10 @@ section { padding: 80px 0; }
   border: 1px solid var(--border);
   margin-bottom: 30px;
 }
-.contact-card h3 {
-  font-size: 24px;
-  margin-bottom: 12px;
-}
-.contact-card p {
-  color: var(--text-muted);
-  margin-bottom: 24px;
-}
-.contact-card .btn {
-  font-size: 16px;
-  padding: 16px 40px;
-}
-.contact-alternative {
-  text-align: center;
-  color: var(--text-muted);
-}
+.contact-card h3 { font-size: 24px; margin-bottom: 12px; }
+.contact-card p { color: var(--text-muted); margin-bottom: 24px; }
+.contact-card .btn { font-size: 16px; padding: 16px 40px; }
+.contact-alternative { text-align: center; color: var(--text-muted); }
 .email-link {
   display: inline-block;
   margin-top: 8px;
@@ -385,15 +325,8 @@ section { padding: 80px 0; }
   gap: 40px;
   margin-bottom: 40px;
 }
-.footer-brand p {
-  color: var(--text-muted);
-  margin-top: 12px;
-  font-size: 14px;
-}
-.footer-links h4 {
-  font-size: 14px;
-  margin-bottom: 16px;
-}
+.footer-brand p { color: var(--text-muted); margin-top: 12px; font-size: 14px; }
+.footer-links h4 { font-size: 14px; margin-bottom: 16px; }
 .footer-links a {
   display: block;
   color: var(--text-muted);
@@ -409,6 +342,57 @@ section { padding: 80px 0; }
   font-size: 13px;
 }
 
+.legal-page {
+  padding: 60px 0;
+  min-height: 60vh;
+}
+.legal-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  padding: 50px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+.legal-content h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: var(--primary-light);
+}
+.legal-content h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  color: var(--primary-light);
+}
+.legal-content h3 { font-size: 17px; margin-top: 20px; margin-bottom: 8px; }
+.legal-content p { margin-bottom: 12px; color: var(--text-muted); }
+.legal-content ul { padding-left: 20px; margin-bottom: 12px; color: var(--text-muted); }
+.legal-content li { margin-bottom: 6px; }
+.legal-content a { color: var(--primary-light); }
+.legal-content strong { color: var(--text); }
+
+.coming-soon {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+.coming-soon-content { max-width: 600px; }
+.coming-soon .badge { margin-bottom: 20px; }
+.coming-soon h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: white;
+}
+.coming-soon p {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hero-content h1 { font-size: 36px; }
@@ -416,6 +400,8 @@ section { padding: 80px 0; }
   .hero-buttons .btn { width: 100%; }
   .section-header h2 { font-size: 28px; }
   .footer-content { grid-template-columns: 1fr; text-align: center; }
-  .footer-brand { text-align: center; }
   .footer-brand .logo { justify-content: center; }
+  .legal-content { padding: 30px 20px; }
+  .legal-content h1 { font-size: 28px; }
+  .coming-soon h1 { font-size: 32px; }
 }
