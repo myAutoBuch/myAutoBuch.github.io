@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog – myAutoBuch</title>
+  assets/icon.png">
+  style.css
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      index.html
+        assets/icon.png
+        <span>myAutoBuch</span>
+      </a>
+      <div class="nav-links">
+        index.html
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container" style="text-align:center;padding:60px 0;">
+      <div class="badge">🚀 Coming Soon</div>
+      <h1 style="font-size:48px;margin:20px 0;">Blog kommt bald</h1>
+      <p style="font-size:18px;color:var(--text-muted);max-width:600px;margin:0 auto 32px;">
+        Hier findest du bald wertvolle Artikel rund um Autos, Wartung, TÜV, Kraftstoffkosten und smarte Tipps für alle Auto-Enthusiasten.
+      </p>
+      <a href="#"n btn-primary">Benachrichtige mich</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 myAutoBuch · index.html · privacy.htmlDatenschutz</a> · imprint.html</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
