@@ -55,25 +55,17 @@ a{color:inherit;text-decoration:none;}
 .nav-links a{color:var(--color-text-muted);font-size:0.95rem;transition:color .2s ease;}
 .nav-links a:hover{color:var(--color-primary-light);}
 
-/* HERO – Clean CSS-only, KEIN Text-Bild mehr */
+/* HERO – Neue Grafik hero-bg-new.png, dezente Verläufe an Rändern */
 .hero{
   position:relative;
   min-height:90vh;
   background:
-    radial-gradient(ellipse at 20% 20%, rgba(30,136,229,0.15), transparent 50%),
-    radial-gradient(ellipse at 80% 80%, rgba(100,181,246,0.10), transparent 50%),
-    linear-gradient(180deg, #0A1428 0%, #0F1F3D 50%, #0A1428 100%);
+    linear-gradient(180deg, rgba(10,20,40,0.3) 0%, transparent 30%, transparent 70%, rgba(10,20,40,0.5) 100%),
+    url("assets/hero-bg-new.png") center center / cover no-repeat,
+    #0A1428;
   display:flex;flex-direction:column;justify-content:center;align-items:center;
   text-align:center;padding:80px 24px;
   overflow:hidden;
-}
-.hero::before{
-  content:"";
-  position:absolute;inset:0;
-  background-image:radial-gradient(circle, rgba(100,181,246,0.08) 1px, transparent 1px);
-  background-size:30px 30px;
-  opacity:0.5;
-  pointer-events:none;
 }
 .hero > *{position:relative;z-index:1;}
 
@@ -86,17 +78,20 @@ a{color:inherit;text-decoration:none;}
   background:linear-gradient(135deg,var(--color-primary-light),#ffffff);
   -webkit-background-clip:text;background-clip:text;
   -webkit-text-fill-color:transparent;
+  text-shadow:0 2px 20px rgba(0,0,0,0.5);
 }
 .hero-subtitle{
   font-size:clamp(1.05rem,2vw,1.35rem);
-  color:var(--color-text-muted);
+  color:rgba(255,255,255,0.85);
   max-width:640px;margin-bottom:28px;
+  text-shadow:0 1px 10px rgba(0,0,0,0.5);
 }
 .hero-usps{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:36px;}
 .pill{
   padding:8px 16px;border-radius:999px;
-  background:rgba(30,136,229,0.12);
-  border:1px solid rgba(30,136,229,0.3);
+  background:rgba(30,136,229,0.2);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(30,136,229,0.4);
   font-size:0.9rem;color:var(--color-primary-light);
 }
 .hero-buttons{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
@@ -115,8 +110,10 @@ a{color:inherit;text-decoration:none;}
 }
 .btn-primary:hover{transform:translateY(-2px);box-shadow:var(--shadow-blue);}
 .btn-secondary{
-  background:transparent;color:var(--color-text);
-  border:1px solid rgba(255,255,255,0.2);
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(8px);
+  color:var(--color-text);
+  border:1px solid rgba(255,255,255,0.25);
 }
 .btn-secondary:hover{border-color:var(--color-primary-light);color:var(--color-primary-light);}
 
@@ -197,7 +194,7 @@ section .lead{
   box-shadow:0 20px 40px rgba(0,0,0,0.4);
 }
 
-/* EARLY ADOPTER CARD – GOLD, kompakter */
+/* EARLY ADOPTER CARD – GOLD, kompakt */
 .beta-wrapper{padding:60px 24px;max-width:680px;margin:0 auto;}
 .beta-card{
   position:relative;overflow:hidden;
@@ -369,6 +366,12 @@ section .lead{
   .screenshots-grid{grid-template-columns:repeat(2,1fr);}
   .footer-grid{grid-template-columns:1fr;text-align:center;}
   .beta-card{padding:28px 20px;}
+  .hero{
+    background:
+      linear-gradient(180deg, rgba(10,20,40,0.5) 0%, transparent 40%, transparent 60%, rgba(10,20,40,0.7) 100%),
+      url("assets/hero-bg-new.png") center center / cover no-repeat,
+      #0A1428;
+  }
 }
 @media (max-width:480px){
   .nav-brand span{display:none;}
