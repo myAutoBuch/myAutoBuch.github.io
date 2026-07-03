@@ -3,26 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>myAutoBuch – Dein digitales Serviceheft</title>
-<meta name="description" content="myAutoBuch ist dein digitales Serviceheft für Wartungen, TÜV-Termine, Tankvorgänge und Fahrzeugkosten. 100% offline, DSGVO-konform, kostenlos.">
-assets/icon.png
-style.css
+<title>myAutoBuch - Dein digitales Serviceheft</title>
+<meta name="description" content="myAutoBuch ist dein digitales Serviceheft fuer Wartungen, TUEV-Termine, Tankvorgaenge und Fahrzeugkosten. 100 Prozent offline, DSGVO-konform, kostenlos.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="navbar">
 <div class="container nav-inner">
 <a href="#" class="logo">
-assets/icon.png
+<span class="logo-img"></span>
 <span>myAutoBuch</span>
 </a>
-<div class="nav-links" id="nav-links">
-<a href="#"</a>
-<a href="#"</a>
-<a href="#"</a>
-<a href="#"</a>
-blog.html
-<button id="theme-toggle" aria-label="Theme wechseln">🌙</button>
+<div class="nav-links">
+<a href="#features">Features</a>
+<a href="#screenshots">Screenshots</a>
+<a href="#faq">FAQ</a>
+<a href="#kontakt">Kontakt</a>
+<a href="blog.html">Blog</a>
 </div>
 </div>
 </nav>
@@ -31,19 +29,17 @@ blog.html
 <div class="hero-overlay"></div>
 <div class="container">
 <div class="hero-content">
-<div class="hero-text">
 <div class="badge">Made in Germany</div>
 <h1>Dein digitales Serviceheft <span class="highlight">und viel mehr</span></h1>
-<p class="hero-subtitle">Verwalte alle Fahrzeuge, Wartungen, TÜV-Termine und Kosten an einem Ort. Aktuell 100% offline, DSGVO-konform, komplett kostenlos.</p>
+<p class="hero-subtitle">Verwalte alle Fahrzeuge, Wartungen, TUEV-Termine und Kosten an einem Ort. Aktuell 100 Prozent offline, DSGVO-konform, komplett kostenlos.</p>
 <div class="hero-buttons">
-<a href="#" class="btn btn-primary">Beta-Tester werden</a>
-<a href="#" class="btn btn-secondary">Features entdecken</a>
+<a href="#beta" class="btn btn-primary">Beta-Tester werden</a>
+<a href="#features" class="btn btn-secondary">Features entdecken</a>
 </div>
 <div class="hero-usps">
 <span>Kostenlos</span>
 <span>Ohne Registrierung</span>
 <span>Offline nutzbar</span>
-</div>
 </div>
 </div>
 </div>
@@ -58,51 +54,51 @@ blog.html
 <div class="features-grid">
 
 <div class="feature-card">
-<div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l1-5h12l1 5M5 13v5h14v-5M5 13H3M19 13h2M7 18v2M17 18v2"/></svg></div>
+<div class="feature-icon" data-icon="car"></div>
 <h3>Mehrere Fahrzeuge</h3>
-<p>Verwalte alle deine Autos an einem Ort – vom Alltagsauto bis zum Oldtimer.</p>
+<p>Verwalte alle deine Autos an einem Ort - vom Alltagsauto bis zum Oldtimer.</p>
 </div>
 
 <div class="feature-card">
-<div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v3M12 21v-3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg></div>
-<h3>TÜV-Erinnerungen</h3>
+<div class="feature-icon" data-icon="bell"></div>
+<h3>TUEV-Erinnerungen</h3>
 <p>Nie wieder einen HU-Termin verpassen. Automatische Push-Benachrichtigungen.</p>
 </div>
 
 <div class="feature-card">
-<div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-<h3>Wartungspläne</h3>
-<p>Ölwechsel, Bremsen, Zahnriemen – alles automatisch geplant und erinnert.</p>
+<div class="feature-icon" data-icon="wrench"></div>
+<h3>Wartungsplaene</h3>
+<p>Oelwechsel, Bremsen, Zahnriemen - alles automatisch geplant und erinnert.</p>
 </div>
 
 <div class="feature-card">
-<div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22h12V4a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v18zM15 10h3a2 2 0 0 1 2 2v6a2 2 0 0 0 2 2M6 6h6M6 10h6M6 14h6"/></svg></div>
+<div class="feature-icon" data-icon="fuel"></div>
 <h3>Tank-Statistiken</h3>
 <p>Verbrauch, Kosten pro km und Preisentwicklung immer auf einen Blick.</p>
 </div>
 
 <div class="feature-card">
-<div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+<div class="feature-icon" data-icon="camera"></div>
 <h3>Foto-Belege</h3>
 <p>Rechnungen und Fahrzeug-Fotos direkt in der App speichern und wiederfinden.</p>
 </div>
 
 <div class="feature-card">
-<div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
+<div class="feature-icon" data-icon="pdf"></div>
 <h3>PDF-Export</h3>
-<p>Komplettes Serviceheft als PDF für den Verkauf oder deine Unterlagen.</p>
+<p>Komplettes Serviceheft als PDF fuer den Verkauf oder deine Unterlagen.</p>
 </div>
 
 <div class="feature-card">
-<div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+<div class="feature-icon" data-icon="shield"></div>
 <h3>Versicherung</h3>
-<p>SF-Klasse, Vertragsdetails und Kosten übersichtlich verwaltet.</p>
+<p>SF-Klasse, Vertragsdetails und Kosten uebersichtlich verwaltet.</p>
 </div>
 
 <div class="feature-card">
-<div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-<h3>100% Privat</h3>
-<p>Deine Daten bleiben auf deinem Gerät. Keine Cloud, keine Tracker.</p>
+<div class="feature-icon" data-icon="lock"></div>
+<h3>100 Prozent Privat</h3>
+<p>Deine Daten bleiben auf deinem Geraet. Keine Cloud, keine Tracker.</p>
 </div>
 
 </div>
@@ -129,8 +125,8 @@ blog.html
 <div class="beta-card">
 <div class="beta-badge">Early Adopter</div>
 <h2>Beta-Tester werden</h2>
-<p>myAutoBuch ist bald verfügbar! Als Beta-Tester bekommst du <strong>lebenslang kostenlose Premium-Features</strong> und hilfst mir, die App perfekt zu machen.</p>
-<a href="#" class="btn btn-primary">Jetzt vormerken</a>
+<p>myAutoBuch ist bald verfuegbar! Als Beta-Tester bekommst du <strong>lebenslang kostenlose Premium-Features</strong> und hilfst mir, die App perfekt zu machen.</p>
+<a href="#kontakt" class="btn btn-primary">Jetzt vormerken</a>
 </div>
 </div>
 </section>
@@ -138,44 +134,44 @@ blog.html
 <section id="faq" class="faq">
 <div class="container">
 <div class="section-header">
-<h2>Häufige Fragen</h2>
+<h2>Haeufige Fragen</h2>
 <p>Alles was du wissen musst</p>
 </div>
 <div class="faq-list">
 
 <details class="faq-item">
 <summary>Ist myAutoBuch wirklich kostenlos?</summary>
-<p>Ja! Die App ist zum Download komplett kostenlos und alle Grundfunktionen sind frei nutzbar. Später werden optionale Premium-Features aktiviert – wer die App vorher installiert (Early Adopter), bekommt Premium lebenslang gratis.</p>
+<p>Ja. Die App ist zum Download komplett kostenlos und alle Grundfunktionen sind frei nutzbar. Spaeter werden optionale Premium-Features aktiviert. Wer die App vorher installiert (Early Adopter), bekommt Premium lebenslang gratis.</p>
 </details>
 
 <details class="faq-item">
 <summary>Werden meine Daten irgendwo gespeichert?</summary>
-<p>Aktuell werden alle Daten <strong>ausschließlich lokal auf deinem Gerät</strong> gespeichert. Keine Cloud, keine Server, keine Tracker. Später wird es optional mit Premium einen Cloud-Sync geben, damit du deine Daten zwischen mehreren Geräten synchronisieren kannst. Die Standard-Nutzung bleibt aber immer 100% offline.</p>
+<p>Aktuell werden alle Daten ausschliesslich lokal auf deinem Geraet gespeichert. Keine Cloud, keine Server, keine Tracker. Spaeter wird es optional mit Premium einen Cloud-Sync geben, damit du deine Daten zwischen mehreren Geraeten synchronisieren kannst. Die Standard-Nutzung bleibt aber immer 100 Prozent offline.</p>
 </details>
 
 <details class="faq-item">
 <summary>Welche Fahrzeuge kann ich verwalten?</summary>
-<p>Aktuell ist myAutoBuch für Autos konzipiert. Motorräder, Wohnmobile und andere Fahrzeugtypen sind für zukünftige Updates in Planung.</p>
+<p>Aktuell ist myAutoBuch fuer Autos konzipiert. Motorraeder, Wohnmobile und andere Fahrzeugtypen sind fuer zukuenftige Updates in Planung.</p>
 </details>
 
 <details class="faq-item">
-<summary>Für welches Land ist die App gedacht?</summary>
-<p>myAutoBuch wurde in Deutschland entwickelt und ist speziell für den deutschen Markt optimiert – mit HSN/TSN, TÜV/HU-Erinnerungen, SF-Klassen und deutschen Kraftstoff-Bezeichnungen.</p>
+<summary>Fuer welches Land ist die App gedacht?</summary>
+<p>myAutoBuch wurde in Deutschland entwickelt und ist speziell fuer den deutschen Markt optimiert - mit HSN/TSN, TUEV/HU-Erinnerungen, SF-Klassen und deutschen Kraftstoff-Bezeichnungen.</p>
 </details>
 
 <details class="faq-item">
 <summary>Wie viele Fahrzeuge kann ich verwalten?</summary>
-<p>Beliebig viele! Alltags-Auto, Zweitwagen, Oldtimer – alles in einer App.</p>
+<p>Beliebig viele. Alltags-Auto, Zweitwagen, Oldtimer - alles in einer App.</p>
 </details>
 
 <details class="faq-item">
-<summary>Gibt es die App auch für iPhone?</summary>
-<p>myAutoBuch ist ausschließlich für Android im Google Play Store verfügbar. Eine iOS-Version ist aktuell nicht geplant.</p>
+<summary>Gibt es die App auch fuer iPhone?</summary>
+<p>myAutoBuch ist ausschliesslich fuer Android im Google Play Store verfuegbar. Eine iOS-Version ist aktuell nicht geplant.</p>
 </details>
 
 <details class="faq-item">
 <summary>Wann kommt die App in den Play Store?</summary>
-<p>Der offizielle Launch ist in Vorbereitung! Trag dich als Beta-Tester ein, dann bekommst du eine E-Mail, sobald es losgeht.</p>
+<p>Der offizielle Launch ist in Vorbereitung. Trag dich als Beta-Tester ein, dann bekommst du eine E-Mail, sobald es losgeht.</p>
 </details>
 
 </div>
@@ -191,12 +187,12 @@ blog.html
 <div class="contact-simple">
 <div class="contact-card">
 <h3>Zum Kontaktformular</h3>
-<p>Fülle das Formular aus und ich melde mich innerhalb von 48 Stunden.</p>
-DEIN_FORMS_LINK class="btn btn-primary">Formular öffnen</a>
+<p>Fuelle das Formular aus und ich melde mich innerhalb von 48 Stunden.</p>
+<a href="#DEIN_FORMS_LINK" class="btn btn-primary">Formular oeffnen</a>
 </div>
 <div class="contact-alternative">
 <p>Oder direkt per E-Mail:</p>
-mailto:myAutoBuch@outlook.de" class="email-link">myAutoBuch@outlook.de</a>
+<a href="mailto:myAutoBuch@outlook.de" class="email-link">myAutoBuch@outlook.de</a>
 </div>
 </div>
 </div>
@@ -207,33 +203,32 @@ mailto:myAutoBuch@outlook.de" class="email-link">myAutoBuch@outlook.de</a>
 <div class="footer-content">
 <div class="footer-brand">
 <div class="logo">
-assets/icon.png
+<span class="logo-img"></span>
 <span>myAutoBuch</span>
 </div>
 <p>Dein digitales Serviceheft und viel mehr.</p>
 </div>
 <div class="footer-links">
 <h4>Rechtliches</h4>
-privacy.html
-imprint.html
+<a href="privacy.html">Datenschutz</a>
+<a href="imprint.html">Impressum</a>
 </div>
 <div class="footer-links">
 <h4>App</h4>
-<a href="#"</a>
-<a href="#"</a>
-blog.html
+<a href="#features">Features</a>
+<a href="#faq">FAQ</a>
+<a href="blog.html">Blog</a>
 </div>
 <div class="footer-links">
 <h4>Kontakt</h4>
-utoBuch@outlook.de">E-Mail</a>
+<a href="mailto:myAutoBuch@outlook.de">E-Mail</a>
 </div>
 </div>
 <div class="footer-bottom">
-<p>© 2026 myAutoBuch. Made in Germany.</p>
+<p>2026 myAutoBuch. Made in Germany.</p>
 </div>
 </div>
 </footer>
 
-script.js
 </body>
 </html>
