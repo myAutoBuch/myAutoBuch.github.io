@@ -23,7 +23,7 @@ a{color:inherit;text-decoration:none;}
 
 /* HERO */
 .hero{min-height:80vh;background:#0A1428;padding:0;overflow:hidden;display:grid;grid-template-columns:45% 55%;align-items:stretch;}
-.hero-image{background:linear-gradient(90deg,transparent 0%,transparent 82%,#0A1428 100%),url("assets/hero-bg-new.png") center center/cover no-repeat,#0A1428;min-height:80vh;}
+.hero-image{background:linear-gradient(90deg,transparent 0%,transparent 82%,#0A1428 100%),url("assets/hero-bg-new.jpg") center center/cover no-repeat,#0A1428;min-height:80vh;}
 .hero-content{display:flex;flex-direction:column;justify-content:center;padding:60px 60px 60px 40px;text-align:left;}
 .hero-content h1{font-size:clamp(2.2rem,4.5vw,3.8rem);font-weight:700;line-height:1.15;padding-bottom:0.1em;margin-bottom:20px;background:linear-gradient(135deg,var(--color-primary-light),#ffffff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
 .hero-content .hero-subtitle{font-size:clamp(1rem,1.6vw,1.2rem);color:rgba(255,255,255,0.8);max-width:520px;margin:0 0 28px 0;line-height:1.6;}
