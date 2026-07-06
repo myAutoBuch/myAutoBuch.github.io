@@ -428,12 +428,12 @@ section .lead {
   content: "";
   display: block;
   width: calc(100% + 64px);
-  height: 270px;
+  height: 210px;
   margin: -32px -32px 24px -32px;
   background-size: cover;
-  /* unten verankert, damit das im Bild eingebrannte Label (unterer Rand) nicht
-     abgeschnitten wird; beschnitten wird stattdessen minimal der obere Bildrand. */
-  background-position: center bottom;
+  /* v1.0: Bilder wurden vom eingebrannten Text-Label befreit (6 von 8 hatten einen
+     unteren Textbalken) - zentrierter Zuschnitt reicht jetzt wieder aus. */
+  background-position: center;
   background-repeat: no-repeat;
   border-radius: 16px 16px 0 0;
   border-bottom: 1px solid rgba(30, 136, 229, 0.15);
@@ -1093,7 +1093,7 @@ section .lead {
   }
 
   .feature-card::before {
-    height: 240px;
+    height: 190px;
   }
 
   .screenshots-grid {
@@ -1132,6 +1132,6 @@ section .lead {
   }
 
   .feature-card::before {
-    height: 220px;
+    height: 170px;
   }
 }
