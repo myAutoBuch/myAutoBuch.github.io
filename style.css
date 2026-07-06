@@ -428,7 +428,7 @@ section .lead {
   content: "";
   display: block;
   width: calc(100% + 64px);
-  height: 210px;
+  height: 270px;
   margin: -32px -32px 24px -32px;
   background-size: cover;
   /* unten verankert, damit das im Bild eingebrannte Label (unterer Rand) nicht
@@ -1093,7 +1093,7 @@ section .lead {
   }
 
   .feature-card::before {
-    height: 190px;
+    height: 240px;
   }
 
   .screenshots-grid {
@@ -1132,6 +1132,6 @@ section .lead {
   }
 
   .feature-card::before {
-    height: 170px;
+    height: 220px;
   }
 }
