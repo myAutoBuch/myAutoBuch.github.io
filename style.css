@@ -485,8 +485,14 @@ section .lead {
 /* SCREENSHOTS */
 .screenshots-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  /* Auf 2 Spalten begrenzt; max-width haelt die Phones auf dem Desktop in vernuenftiger
+     Groesse (sonst waeren sie bei 2 Spalten riesig). Auf dem Handy greift die volle Breite. */
+  max-width: 760px;
+  margin: 0 auto;
+  /* start statt stretch -> Bilder werden nie vertikal gedehnt, alle exakt gleich ausgerichtet. */
+  align-items: start;
 }
 
 /* Echte App-Screenshots (bringen bereits einen Geraeterahmen mit -> kein zusaetzlicher
@@ -498,6 +504,10 @@ section .lead {
   border-radius: 28px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   transition: transform 0.25s ease;
+  /* Seitenverhaeltnis fest verankert (alle Screenshots sind 720x1524) -> jede Box exakt
+     gleich hoch, garantiert saubere Ausrichtung im Grid, auch bei Sub-Pixel-Rundung. */
+  aspect-ratio: 720 / 1524;
+  object-fit: cover;
 }
 
 .app-screenshot:hover {
