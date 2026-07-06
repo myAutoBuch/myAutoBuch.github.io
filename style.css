@@ -162,3 +162,77 @@ section .lead{text-align:center;color:var(--color-text-muted);max-width:640px;ma
 .blog-post-back{display:inline-flex;align-items:center;gap:6px;color:var(--color-text-muted);margin-bottom:24px;font-size:0.9rem;transition:color .2s ease;}
 .blog-post-back:hover{color:var(--color-primary-light);}
 @media (max-width:768px){.blog-post-body{font-size:1rem;} .blog-card-image{height:200px;}}
+/* Feature-Bilder in den Feature-Karten */
+.features-grid .feature-card {
+  overflow: hidden;
+}
+
+/* Alte kleinen SVG-Icons ausblenden, da jetzt Premium-Bilder verwendet werden */
+.features-grid .feature-icon {
+  display: none;
+}
+
+.features-grid .feature-card::before {
+  content: "";
+  display: block;
+  height: 210px;
+  margin: -32px -32px 24px -32px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px 16px 0 0;
+  border-bottom: 1px solid rgba(30, 136, 229, 0.15);
+}
+
+/* Bild 1 – Mehrere Fahrzeuge */
+.features-grid .feature-card:nth-child(1)::before {
+  background-image: url("assets/feature-1-vehicles.jpg");
+}
+
+/* Bild 2 – TÜV-Erinnerungen */
+.features-grid .feature-card:nth-child(2)::before {
+  background-image: url("assets/feature-2-reminders.jpg");
+}
+
+/* Bild 3 – Wartungspläne */
+.features-grid .feature-card:nth-child(3)::before {
+  background-image: url("assets/feature-3-maintenance.jpg");
+}
+
+/* Bild 4 – Statistiken & Auswertungen */
+.features-grid .feature-card:nth-child(4)::before {
+  background-image: url("assets/feature-4-statistics.jpg");
+}
+
+/* Bild 5 – Foto-Belege */
+.features-grid .feature-card:nth-child(5)::before {
+  background-image: url("assets/feature-5-photo-receipts.jpg");
+}
+
+/* Bild 6 – PDF-Export */
+.features-grid .feature-card:nth-child(6)::before {
+  background-image: url("assets/feature-6-pdf-export.jpg");
+}
+
+/* Bild 7 – Versicherung */
+.features-grid .feature-card:nth-child(7)::before {
+  background-image: url("assets/feature-7-insurance.jpg");
+}
+
+/* Bild 8 – 100% Privat */
+.features-grid .feature-card:nth-child(8)::before {
+  background-image: url("assets/feature-8-private.jpg");
+}
+
+/* Mobile Optimierung */
+@media (max-width: 768px) {
+  .features-grid .feature-card::before {
+    height: 190px;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-grid .feature-card::before {
+    height: 170px;
+  }
+}
