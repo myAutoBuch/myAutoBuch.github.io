@@ -1,0 +1,8 @@
+# robots.txt fuer myAutoBuch
+# Erlaubt allen Suchmaschinen den vollen Zugriff auf die Website.
+
+User-agent: *
+Allow: /
+
+# Sitemap fuer schnellere Indexierung
+Sitemap: https://myautobuch.github.io/sitemap.xml
