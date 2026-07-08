@@ -1438,3 +1438,7 @@ section .lead {
     transform: none !important;
   }
 }
+
+.blog-card-image-4 {
+  background-image: url("assets/blog-4-cover.jpg");
+}
