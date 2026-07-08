@@ -1279,7 +1279,7 @@ section .lead {
 }
 
 .btn-gold {
-  animation: mabPulseGold 3.2s ease-out infinite;
+  animation: none;
 }
 
 .btn-gold:hover svg,
