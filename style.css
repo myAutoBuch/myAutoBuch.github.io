@@ -1147,3 +1147,289 @@ section .lead {
     height: 170px;
   }
 }
+
+/* === myAutoBuch Premium Animations === */
+/* Premium Micro-Animations: Hero, Logo, Early-Adopter Shine, Cards, Screenshots */
+
+@keyframes mabFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mabFloatLogo {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes mabShimmer {
+  0% {
+    transform: translateX(-140%) skewX(-18deg);
+  }
+  100% {
+    transform: translateX(260%) skewX(-18deg);
+  }
+}
+
+@keyframes mabPulseGold {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 179, 0, 0.45), 0 6px 20px rgba(255, 179, 0, 0.40);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(255, 179, 0, 0), 0 10px 28px rgba(255, 179, 0, 0.48);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 179, 0, 0), 0 6px 20px rgba(255, 179, 0, 0.40);
+  }
+}
+
+@keyframes mabHeroMotion {
+  from {
+    transform: scale(1);
+    filter: saturate(1);
+  }
+  to {
+    transform: scale(1.055);
+    filter: saturate(1.08);
+  }
+}
+
+/* Header / Navigation */
+.nav-logo {
+  animation: mabFloatLogo 4s ease-in-out infinite;
+  will-change: transform;
+}
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--color-primary-light), var(--color-gold-light));
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Hero Entrance */
+.hero-image {
+  animation: mabHeroMotion 22s ease-in-out infinite alternate;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+.hero-content h1,
+.hero-content .hero-subtitle,
+.hero-content .hero-usps,
+.hero-content .hero-buttons {
+  opacity: 0;
+  animation: mabFadeUp 0.85s ease forwards;
+}
+
+.hero-content h1 {
+  animation-delay: 0.10s;
+}
+
+.hero-content .hero-subtitle {
+  animation-delay: 0.25s;
+}
+
+.hero-content .hero-usps {
+  animation-delay: 0.40s;
+}
+
+.hero-content .hero-buttons {
+  animation-delay: 0.55s;
+}
+
+.pill {
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.pill:hover {
+  transform: translateY(-2px);
+  border-color: rgba(100, 181, 246, 0.75);
+  background: rgba(30, 136, 229, 0.22);
+}
+
+/* Buttons */
+.btn,
+.btn-gold {
+  will-change: transform, box-shadow;
+}
+
+.btn-gold {
+  animation: mabPulseGold 3.2s ease-out infinite;
+}
+
+.btn-gold:hover svg,
+.blog-card-link:hover {
+  transform: translateX(2px);
+}
+
+/* Early Adopter Card Shine */
+.beta-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 42%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.14),
+    rgba(255, 202, 40, 0.12),
+    transparent
+  );
+  pointer-events: none;
+  animation: mabShimmer 7.5s linear infinite;
+  z-index: 0;
+}
+
+.beta-icon-large {
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.beta-card:hover .beta-icon-large {
+  transform: translateY(-3px) rotate(-2deg);
+  box-shadow: 0 10px 28px rgba(255, 179, 0, 0.28);
+}
+
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-card.reveal:nth-child(2),
+.app-screenshot.reveal:nth-child(2),
+.faq-item.reveal:nth-child(2) {
+  transition-delay: 0.06s;
+}
+
+.feature-card.reveal:nth-child(3),
+.app-screenshot.reveal:nth-child(3),
+.faq-item.reveal:nth-child(3) {
+  transition-delay: 0.12s;
+}
+
+.feature-card.reveal:nth-child(4),
+.app-screenshot.reveal:nth-child(4),
+.faq-item.reveal:nth-child(4) {
+  transition-delay: 0.18s;
+}
+
+.feature-card.reveal:nth-child(5),
+.app-screenshot.reveal:nth-child(5),
+.faq-item.reveal:nth-child(5) {
+  transition-delay: 0.24s;
+}
+
+.feature-card.reveal:nth-child(6),
+.app-screenshot.reveal:nth-child(6),
+.faq-item.reveal:nth-child(6) {
+  transition-delay: 0.30s;
+}
+
+.feature-card.reveal:nth-child(7),
+.faq-item.reveal:nth-child(7) {
+  transition-delay: 0.36s;
+}
+
+.feature-card.reveal:nth-child(8) {
+  transition-delay: 0.42s;
+}
+
+/* Feature Cards Premium Hover */
+.feature-card {
+  position: relative;
+  will-change: transform, box-shadow;
+}
+
+.feature-card::before {
+  transition: transform 0.55s ease, filter 0.55s ease;
+}
+
+.feature-card:hover::before {
+  transform: scale(1.035);
+  filter: saturate(1.12) contrast(1.04);
+}
+
+.feature-card h3 {
+  transition: color 0.25s ease;
+}
+
+.feature-card:hover h3 {
+  color: #ffffff;
+}
+
+/* Screenshots Premium Hover */
+.app-screenshot {
+  will-change: transform, box-shadow;
+}
+
+.app-screenshot:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 24px 55px rgba(30, 136, 229, 0.34), 0 18px 42px rgba(0, 0, 0, 0.42);
+}
+
+/* FAQ Interaction */
+.faq-item {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(100, 181, 246, 0.35);
+  box-shadow: 0 10px 24px rgba(30, 136, 229, 0.10);
+}
+
+/* Blog Card polish, falls Blogseite dieselbe CSS nutzt */
+.blog-card,
+.blog-card-image {
+  will-change: transform;
+}
+
+/* Accessibility: Nutzer mit reduzierte-Bewegung-Einstellung bekommen keine Animationen */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
