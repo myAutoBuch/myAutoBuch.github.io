@@ -115,6 +115,7 @@ a {
 
 .hero-image {
   background:
+    linear-gradient(180deg, transparent 0%, transparent 78%, #0A1428 100%),
     linear-gradient(90deg, transparent 0%, transparent 82%, #0A1428 100%),
     url("assets/hero-bg-new.jpg") center center / cover no-repeat,
     #0A1428;
