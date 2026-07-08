@@ -1442,3 +1442,15 @@ section .lead {
 .blog-card-image-4 {
   background-image: url("assets/blog-4-cover.jpg");
 }
+
+/* Gold-Button im Blog-Text soll NICHT wie ein normaler Link aussehen */
+.blog-post-body a.btn-gold {
+  color: #1A1200;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.blog-post-body a.btn-gold:hover {
+  color: #1A1200;
+  text-decoration: none;
+}
