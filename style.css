@@ -1454,3 +1454,13 @@ section .lead {
   color: #1A1200;
   text-decoration: none;
 }
+
+/* Hero-Text auf dem Desktop vertikal zentrieren -> schließt die obere Lücke */
+@media (min-width: 901px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+}
