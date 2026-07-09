@@ -104,20 +104,32 @@
   "inLanguage": "de-DE"
 }
 </script>
-<!-- =========================================================
-     myAutoBuch – FAQ Rich Snippet (JSON-LD)
-     
-     WO EINFÜGEN?
-     Diesen kompletten Block in deine index.html einfuegen,
-     direkt VOR </head>. Am besten direkt hinter das bereits
-     eingebaute SEO-Snippet.
-     
-     WAS BEWIRKT DAS?
-     Google zeigt deine FAQs direkt in den Suchergebnissen
-     als aufklappbare Boxen an. Das erhoeht Klicks und
-     Sichtbarkeit spuerbar, ganz ohne Aenderung des sichtbaren
-     Designs deiner Website.
-     ========================================================= -->
+============================================================
+myAutoBuch - FAQ-Schema (FAQPage JSON-LD)
+============================================================
+
+WICHTIGER HINWEIS:
+Google zeigt die aufklappbaren FAQ-Boxen in den Suchergebnissen
+seit dem 7. Mai 2026 nicht mehr an. Das FAQ-Schema ist aber
+weiterhin sinnvoll, weil:
+  - KI-Suche (Google AI Overviews, ChatGPT, Gemini, Perplexity)
+    das Schema als klare Frage-Antwort-Struktur liest
+  - Suchmaschinen die Seite dadurch inhaltlich besser verstehen
+  - Es keinerlei Nachteile hat (unbenutztes Schema schadet nicht)
+
+WO EINFUEGEN?
+Diesen kompletten Block unten (ab <script ... bis </script>)
+in die index.html einfuegen, direkt VOR </head>.
+Am besten hinter deine anderen JSON-LD Bloecke.
+
+WICHTIG:
+Die sichtbare FAQ-Sektion auf deiner Seite bitte UNBEDINGT
+behalten. Sie ist für deine echten Besucher wertvoll und
+liefert die Inhalte, die das Schema beschreibt.
+
+------------------------------------------------------------
+HIER DER CODE ZUM KOPIEREN:
+------------------------------------------------------------
 
 <script type="application/ld+json">
 {
@@ -129,7 +141,7 @@
       "name": "Ist myAutoBuch wirklich kostenlos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ja. Der Download bleibt immer kostenlos. Spaeter wird es zusaetzliche Premium-Features geben. Early Adopter bekommen nahezu alle davon dauerhaft kostenlos."
+        "text": "Der Download bleibt immer kostenlos. Später wird es zusätzliche Premium-Features geben. Early Adopter bekommen nahezu alle davon dauerhaft kostenlos."
       }
     },
     {
@@ -137,23 +149,23 @@
       "name": "Wo werden meine Daten gespeichert?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Alle Daten bleiben lokal auf deinem Smartphone. Es gibt keinen Server und kein Konto. Spaeter kommt eine optionale Cloud-Sicherung als Premium-Feature."
+        "text": "Alle Daten bleiben lokal auf deinem Smartphone. Es gibt keinen Server und kein Konto. Später kommt eine optionale Cloud-Sicherung als Premium-Feature."
       }
     },
     {
       "@type": "Question",
-      "name": "Welche Fahrzeuge werden unterstuetzt?",
+      "name": "Welche Fahrzeuge werden unterstützt?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Aktuell nur Autos (PKW). Motorraeder, Wohnmobile und LKW folgen in spaeteren Versionen."
+        "text": "Aktuell nur Autos (PKW). Motorräder, Wohnmobile und LKW folgen in späteren Versionen."
       }
     },
     {
       "@type": "Question",
-      "name": "Fuer welches Land ist die App gemacht?",
+      "name": "Für welches Land ist die App gemacht?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "myAutoBuch ist speziell fuer Deutschland gemacht. Mit HSN/TSN-Erfassung, TUEV/HU-Terminen und SF-Klassen fuer die Kfz-Versicherung."
+        "text": "myAutoBuch ist speziell für Deutschland gemacht. Mit HSN/TSN-Erfassung, TÜV/HU-Terminen und SF-Klassen für die Kfz-Versicherung."
       }
     },
     {
@@ -166,10 +178,10 @@
     },
     {
       "@type": "Question",
-      "name": "Gibt es die App auch fuer iPhone?",
+      "name": "Gibt es die App auch für iPhone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Aktuell nein. myAutoBuch ist nur fuer Android verfuegbar. Eine iOS-Version ist derzeit nicht geplant."
+        "text": "Aktuell nein. myAutoBuch ist nur für Android verfügbar. Eine iOS-Version ist derzeit nicht geplant."
       }
     },
     {
@@ -177,7 +189,7 @@
       "name": "Wann kommt die App in den Play Store?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Der Release wird gerade vorbereitet. Melde dich als Early Adopter an, um frueh dabei zu sein."
+        "text": "Der Release wird gerade vorbereitet. Melde dich als Early Adopter an, um früh dabei zu sein."
       }
     }
   ]
