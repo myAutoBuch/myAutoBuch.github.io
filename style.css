@@ -1454,3 +1454,7 @@ section .lead {
   color: #1A1200;
   text-decoration: none;
 }
+
+.blog-card-image-5 {
+  background-image: url("assets/blog-5-cover.jpg");
+}
