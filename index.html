@@ -29,10 +29,6 @@
 <meta name="theme-color" content="#0A1428">
 <link rel="stylesheet" href="style.css">
 
-<!-- =========================================================
-     myAutoBuch – SEO Erweiterungen (ergaenzend zu den obigen Tags)
-     ========================================================= -->
-
 <!-- Zusaetzliche SEO-Meta-Tags -->
 <meta name="keywords" content="digitales Serviceheft, Fahrzeugverwaltung, TÜV Erinnerung, Wartungsplan, Tankbuch, KFZ App, Auto App, myAutoBuch, Android App, Fahrtenbuch, Serviceheft App, HU Erinnerung">
 <meta name="author" content="myAutoBuch">
@@ -41,17 +37,7 @@
 <meta name="language" content="German">
 <meta name="revisit-after" content="7 days">
 <meta name="rating" content="general">
-
-<!-- Google Search Console Verifizierung
-     Ersetze DEIN_VERIFIZIERUNGS_CODE_HIER durch den Code aus
-     https://search.google.com/search-console -->
 <meta name="google-site-verification" content="DEIN_VERIFIZIERUNGS_CODE_HIER">
-
-<!-- Bing Webmaster (optional)
-<meta name="msvalidate.01" content="DEIN_BING_CODE_HIER">
--->
-
-<!-- Twitter Zusatz-Tags -->
 <meta name="twitter:site" content="@myautobuch">
 <meta name="twitter:creator" content="@myautobuch">
 
@@ -92,7 +78,6 @@
   ]
 }
 </script>
-
 <!-- Structured Data / JSON-LD: Organization -->
 <script type="application/ld+json">
 {
@@ -109,7 +94,6 @@
   ]
 }
 </script>
-
 <!-- Structured Data / JSON-LD: Website mit interner Suche -->
 <script type="application/ld+json">
 {
@@ -170,7 +154,7 @@
       "name": "Gibt es die App auch für iPhone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Aktuell nein. myAutoBuch ist nur für Android verfügbar. Eine iOS-Version ist derzeit nicht geplant."
+        "text": "myAutoBuch startet zuerst für Android. Eine iOS-Version ist nicht ausgeschlossen – trag dich auf die Warteliste ein."
       }
     },
     {
@@ -190,9 +174,10 @@
 <nav class="nav">
   <a href="index.html" class="nav-brand">
     <div class="nav-logo" aria-label="myAutoBuch Logo"></div>
-    <span>myAutoBuch</span>
+    <span><span style="color:var(--color-primary);">my</span>AutoBuch</span>
   </a>
   <ul class="nav-links">
+    <li><a href="index.html#warum">Story</a></li>
     <li><a href="index.html#features">Features</a></li>
     <li><a href="index.html#faq">FAQ</a></li>
     <li><a href="blog.html">Blog</a></li>
@@ -201,25 +186,213 @@
   <div class="nav-spacer"></div>
 </nav>
 
+<!-- 1) HERO -->
 <section class="hero">
   <div class="hero-image" role="img" aria-label="myAutoBuch – dein digitales Serviceheft"></div>
   <div class="hero-content">
-    <h1>Dein digitales Serviceheft.</h1>
-    <p class="hero-subtitle">Wartung, TÜV, Tankkosten und Belege – alles in einer App. 100&nbsp;% offline. 100&nbsp;% privat. Made in Germany.</p>
+    <span class="hero-eyebrow">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      Von einem KFZ-Mechatroniker entwickelt
+    </span>
+    <h1>Dein Auto. Seine gesamte Geschichte. An einem Ort.</h1>
+    <p class="hero-subtitle">Nie wieder Rechnungen suchen, Wartungen vergessen oder den Überblick über Kosten verlieren.</p>
     <div class="hero-usps">
+      <span class="pill pill-android"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg> Für Android</span>
       <span class="pill"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Offline &amp; Privat</span>
       <span class="pill"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Wartungshistorie + Fotos</span>
       <span class="pill"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Made in Germany</span>
     </div>
     <div class="hero-buttons">
-      <a href="#screenshots" class="btn btn-primary">App entdecken</a>
-      <a href="#features" class="btn btn-secondary">Mehr erfahren</a>
+      <!-- CTA JETZT (bis Launch): Early Adopter.
+           LAUNCH in ~2 Wochen -> diesen Button ersetzen durch:
+           <a href="PLAYSTORE_URL" class="btn btn-primary">Jetzt kostenlos im Play Store laden</a> -->
+      <a href="https://forms.office.com/r/3U23NcqqBD" class="btn btn-primary">Early Adopter werden</a>
+      <a href="#warum" class="btn btn-secondary">Wie alles begann</a>
+    </div>
+    <p class="hero-note">Bald im Google Play Store · Jetzt als Early Adopter anmelden und von Anfang an dabei sein</p>
+  </div>
+</section>
+
+<!-- 2) SCREENSHOT-KARUSSELL (echtes 3D, aber scharf) -->
+<section id="screenshots" class="screens-head">
+  <h2 class="reveal">Ein Blick in die App</h2>
+  <p class="lead reveal" data-d="1">Echte Screenshots direkt aus myAutoBuch.</p>
+</section>
+
+<div class="carousel3d" id="carousel3d" aria-label="Screenshot-Galerie von myAutoBuch">
+  <button class="carousel3d-nav prev" id="c3dPrev" aria-label="Vorheriger Screenshot">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <div class="carousel3d-stage" id="c3dStage">
+    <figure class="c3d-item" data-title="Alles zum Fahrzeug" data-text="Kennzeichen, VIN und Kilometerstand immer griffbereit.">
+      <img src="assets/screenshot-1.jpg" alt="Fahrzeug-Detailansicht mit Kennzeichen, VIN, Kilometerstand und Fahrzeugdaten" loading="lazy" width="720" height="1524">
+    </figure>
+    <figure class="c3d-item" data-title="Dein Cockpit" data-text="Übersicht, anstehende Termine und Kosten auf einen Blick.">
+      <img src="assets/screenshot-2.jpg" alt="Dashboard mit Fahrzeug-Übersicht, anstehenden Terminen und Kostenverlauf" loading="lazy" width="720" height="1524">
+    </figure>
+    <figure class="c3d-item" data-title="Nie wieder TÜV/Service verpassen" data-text="Automatische Erinnerungen für HU und Wartung.">
+      <img src="assets/screenshot-3.jpg" alt="Erinnerungen an TÜV/HU und Wartungstermine mit Fälligkeit" loading="lazy" width="720" height="1524">
+    </figure>
+    <figure class="c3d-item" data-title="Zahlen, die du verstehst" data-text="Verbrauch, Fahrleistung und Tank-Ranking im Vergleich.">
+      <img src="assets/screenshot-4.jpg" alt="Statistiken mit Monatsvergleich, Tankstellen-Ranking und Fahrleistung" loading="lazy" width="720" height="1524">
+    </figure>
+    <figure class="c3d-item" data-title="Volle Kostenkontrolle" data-text="Ausgaben und CO₂ je Kraftstoff immer im Blick.">
+      <img src="assets/screenshot-5.jpg" alt="Kostenübersicht mit Gesamtausgaben, Tank-Auswertung und CO₂ pro Kraftstoff" loading="lazy" width="720" height="1524">
+    </figure>
+    <figure class="c3d-item" data-title="Jede Tankung erfasst" data-text="Getrennte Auswertung je Kraftstoff und volle Historie.">
+      <img src="assets/screenshot-6.jpg" alt="Tankübersicht mit getrennter Auswertung je Kraftstoff und Tankungs-Historie" loading="lazy" width="720" height="1524">
+    </figure>
+  </div>
+  <button class="carousel3d-nav next" id="c3dNext" aria-label="Nächster Screenshot">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+</div>
+<div class="carousel3d-caption reveal" id="c3dCaption">
+  <h4>Alles zum Fahrzeug</h4>
+  <p>Kennzeichen, VIN und Kilometerstand immer griffbereit.</p>
+</div>
+
+<!-- 3) WARUM ICH DIESE APP ENTWICKELT HABE -->
+<section id="warum" class="warum-section">
+  <div class="warum-grid">
+    <div class="warum-visual reveal">
+      <img src="assets/warum-visual.jpg" alt="KFZ-Mechatroniker arbeitet zufrieden am eigenen Fahrzeug in seiner Garage">
+      <div class="warum-visual-label">
+        <strong>Dein Auto. Deine Kontrolle.</strong>
+        <span>Alles dokumentiert, nichts vergessen.</span>
+      </div>
+    </div>
+    <div class="warum-text reveal" data-d="1">
+      <span class="warum-eyebrow">Warum myAutoBuch?</span>
+      <h2>Entwickelt von einem KFZ-Mechatroniker.</h2>
+      <p>Hast du schon mal versucht, den letzten Ölwechsel deines Autos zu finden – nicht das Datum, sondern den <strong>Beleg</strong>? Genau da fing mein Problem an.</p>
+      <blockquote>Das Problem war nie die Arbeit am Auto. Das Problem war das Wiederfinden der Informationen.</blockquote>
+      <p>Rechnungen hier, Fotos dort, Wartungsdaten irgendwo anders – und dann noch der verpasste TÜV. myAutoBuch bringt genau diese Dinge zusammen: <strong>sauber, offline und ohne Abo-Falle.</strong></p>
+      <a href="blog-post-1.html" class="warum-link">Die ganze Geschichte lesen
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
     </div>
   </div>
 </section>
 
+<!-- 4) FEATURES (nutzenorientiert) -->
+<section id="features">
+  <h2 class="reveal">Alles, was dein Auto braucht</h2>
+  <p class="lead reveal" data-d="1">Kein Papierkram, keine verlorenen Belege – nur der volle Überblick über jedes deiner Fahrzeuge.</p>
+  <div class="features-grid">
+    <div class="feature-card reveal" data-d="1">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg></div>
+      <h3>Mehrere Fahrzeuge</h3>
+      <p>Vom Alltagsauto bis zum Oldtimer – alle deine Fahrzeuge übersichtlich an einem Ort.</p>
+    </div>
+    <div class="feature-card reveal" data-d="2">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+      <h3>TÜV-Erinnerungen</h3>
+      <p>Nie wieder einen Termin verpassen. myAutoBuch erinnert dich rechtzeitig an HU und Wartung.</p>
+    </div>
+    <div class="feature-card reveal" data-d="3">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+      <h3>Wartungspläne</h3>
+      <p>Öl, Bremsen, Zahnriemen – du weißt immer, was als Nächstes fällig ist.</p>
+    </div>
+    <div class="feature-card reveal" data-d="4">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></div>
+      <h3>Kosten &amp; Statistiken</h3>
+      <p>Verbrauch und Ausgaben auf einen Blick – du siehst sofort, wo dein Geld hinfließt.</p>
+    </div>
+    <div class="feature-card reveal" data-d="5">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+      <h3>Foto-Belege</h3>
+      <p>Rechnungen, Bons und Vorher-Nachher-Fotos direkt am Fahrzeug – auch selbst gemachte Reparaturen sauber dokumentiert.</p>
+    </div>
+    <div class="feature-card reveal" data-d="6">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+      <h3>PDF-Export</h3>
+      <p>Lückenlose Historie als PDF – dein bester Trumpf beim Verkauf oder in der Werkstatt.</p>
+    </div>
+    <div class="feature-card reveal" data-d="7">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <h3>Versicherung</h3>
+      <p>SF-Klasse, Beiträge und Vertragsdaten immer griffbereit.</p>
+    </div>
+    <div class="feature-card reveal" data-d="8">
+      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+      <h3>100 % Privat</h3>
+      <p>Alle Daten bleiben auf deinem Handy. Keine Cloud-Pflicht, kein Tracking, keine Werbung.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4b) VERGLEICH: myAutoBuch vs. Zettelwirtschaft -->
+<section id="vergleich">
+  <h2 class="reveal">Schluss mit der Zettelwirtschaft</h2>
+  <p class="lead reveal" data-d="1">Papier verblasst, Zettel gehen verloren, Rechnungen verschwinden. myAutoBuch nicht.</p>
+  <div class="compare-grid">
+    <div class="compare-col is-old reveal" data-d="1">
+      <h3>
+        <svg class="compare-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Zettel &amp; Handschuhfach
+      </h3>
+      <ul class="compare-list">
+        <li><svg class="compare-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Belege verblassen oder gehen verloren</li>
+        <li><svg class="compare-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Keine Erinnerung – der TÜV wird verpasst</li>
+        <li><svg class="compare-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Kosten selbst zusammenrechnen</li>
+        <li><svg class="compare-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Beim Verkauf keine lückenlose Historie</li>
+      </ul>
+    </div>
+    <div class="compare-col is-new reveal" data-d="2">
+      <h3>
+        <svg class="compare-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+        Mit myAutoBuch
+      </h3>
+      <ul class="compare-list">
+        <li><svg class="compare-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Foto-Belege für immer sicher am Fahrzeug</li>
+        <li><svg class="compare-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Automatische Erinnerung an HU &amp; Wartung</li>
+        <li><svg class="compare-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Kosten &amp; Verbrauch automatisch ausgewertet</li>
+        <li><svg class="compare-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Komplette Historie als PDF – ideal zum Verkauf</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 4c) SERVICE-PRESETS (echte App-Icons aus PLAN_TEMPLATES) -->
+<section id="presets" style="padding-top:20px;">
+  <h2 class="reveal">Ein Service in Sekunden erfasst</h2>
+  <p class="lead reveal" data-d="1">Fertige Vorlagen für die häufigsten Arbeiten – oder leg dir eigene an.</p>
+  <div class="presets-wrap">
+    <div class="presets-grid">
+      <div class="preset-chip reveal" data-d="1">
+        <div class="preset-ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div>
+        <span>Ölwechsel</span>
+      </div>
+      <div class="preset-chip reveal" data-d="2">
+        <div class="preset-ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg></div>
+        <span>Inspektion</span>
+      </div>
+      <div class="preset-chip reveal" data-d="3">
+        <div class="preset-ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="12" r="7"/><circle cx="10" cy="12" r="2.5"/><path d="M17 8.5a4 4 0 0 1 0 7z"/></svg></div>
+        <span>Bremsen</span>
+      </div>
+      <div class="preset-chip reveal" data-d="4">
+        <div class="preset-ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg></div>
+        <span>Reifenwechsel</span>
+      </div>
+      <div class="preset-chip reveal" data-d="5">
+        <div class="preset-ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0A1.65 1.65 0 0 0 9 3.09V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+        <span>Zahnriemen</span>
+      </div>
+      <div class="preset-chip reveal" data-d="6">
+        <div class="preset-ico"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="11" rx="2"/><path d="M8 8V5.5h2V8M14 8V5.5h2V8"/><path d="M7.5 13.5h2M8.5 12.5v2M14.5 13.5h2"/></svg></div>
+        <span>Batterie</span>
+      </div>
+    </div>
+    <p class="presets-note reveal">Jeder Eintrag mit Datum, Kilometerstand, Kosten und Foto – <strong>auch selbst gemachte Reparaturen und eigene Service-Vorlagen</strong>.</p>
+  </div>
+</section>
+
+<!-- 5) EARLY ADOPTER -->
 <div class="beta-wrapper" id="beta">
-  <div class="beta-card">
+  <div class="beta-card reveal">
     <div class="beta-icon-large"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
     <div class="beta-content">
       <span class="beta-badge">Early Adopter Programm</span>
@@ -239,93 +412,49 @@
   </div>
 </div>
 
-<section id="features">
-  <h2>Alles, was dein Auto braucht</h2>
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"/><circle cx="6.5" cy="16.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/></svg></div>
-      <h3>Mehrere Fahrzeuge</h3>
-      <p>Verwalte beliebig viele Autos in einer App – vom Alltagsflitzer bis zum Oldtimer.</p>
+<!-- 5b) iOS-WARTELISTE -->
+<div class="ios-wrapper" id="ios">
+  <div class="ios-card reveal">
+    <div class="ios-badge">iOS</div>
+    <div class="ios-text">
+      <h2>Du hast ein iPhone?</h2>
+      <p>myAutoBuch startet zuerst für Android. Eine iOS-Version ist aber nicht ausgeschlossen – trag dich auf die Warteliste ein und wir melden uns, sobald es Neuigkeiten gibt.</p>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
-      <h3>TÜV-Erinnerungen</h3>
-      <p>Verpasse nie wieder eine Hauptuntersuchung. Automatische Erinnerungen inklusive.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-      <h3>Wartungspläne</h3>
-      <p>Ölwechsel, Bremsen, Zahnriemen – alle Wartungen übersichtlich geplant.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg></div>
-      <h3>Statistiken & Auswertungen</h3>
-      <p>Verbrauch, Wartungskosten, Fahrleistung – alle Auswertungen deiner Fahrzeuge auf einen Blick.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
-      <h3>Foto-Belege</h3>
-      <p>Rechnungen und Belege direkt am Fahrzeug hinterlegen. Nie wieder Papierchaos.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
-      <h3>PDF-Export</h3>
-      <p>Serviceheft als PDF exportieren – perfekt für Werkstatt oder Verkauf.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-      <h3>Versicherung</h3>
-      <p>SF-Klasse, Beiträge und Vertragsdaten immer griffbereit.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-      <h3>100% Privat</h3>
-      <p>Alle Daten bleiben auf deinem Handy. Keine Cloud, kein Tracking.</p>
+    <div class="beta-actions">
+      <a href="https://forms.office.com/r/3U23NcqqBD" class="btn btn-primary">Auf die iOS-Warteliste</a>
     </div>
   </div>
-</section>
+</div>
 
-<section id="screenshots">
-  <h2>Ein Blick in die App</h2>
-  <p class="lead">Echte Screenshots direkt aus myAutoBuch.</p>
-  <div class="screenshots-grid">
-    <img class="app-screenshot" src="assets/screenshot-1.jpg" alt="Fahrzeug-Detailansicht mit Kennzeichen, VIN, Kilometerstand und Fahrzeugdaten" loading="lazy" width="720" height="1524">
-    <img class="app-screenshot" src="assets/screenshot-2.jpg" alt="Dashboard mit Fahrzeug-Übersicht, anstehenden Terminen und Kostenverlauf" loading="lazy" width="720" height="1524">
-    <img class="app-screenshot" src="assets/screenshot-3.jpg" alt="Erinnerungen an TÜV/HU und Wartungstermine mit Fälligkeit" loading="lazy" width="720" height="1524">
-    <img class="app-screenshot" src="assets/screenshot-4.jpg" alt="Statistiken mit Monatsvergleich, Tankstellen-Ranking und Fahrleistung" loading="lazy" width="720" height="1524">
-    <img class="app-screenshot" src="assets/screenshot-5.jpg" alt="Kostenübersicht mit Gesamtausgaben, Tank-Auswertung und CO₂ pro Kraftstoff" loading="lazy" width="720" height="1524">
-    <img class="app-screenshot" src="assets/screenshot-6.jpg" alt="Tankübersicht mit getrennter Auswertung je Kraftstoff und Tankungs-Historie" loading="lazy" width="720" height="1524">
-  </div>
-</section>
-
+<!-- 6) FAQ -->
 <section id="faq">
-  <h2>Häufige Fragen</h2>
+  <h2 class="reveal">Häufige Fragen</h2>
   <div class="faq-list">
-    <details class="faq-item">
+    <details class="faq-item reveal" data-d="1">
       <summary>Ist myAutoBuch wirklich kostenlos?<span class="faq-icon">+</span></summary>
       <p>Der Download bleibt immer kostenlos. Später wird es zusätzliche Premium-Features geben – Early Adopter bekommen nahezu alle davon dauerhaft kostenlos.</p>
     </details>
-    <details class="faq-item">
+    <details class="faq-item reveal" data-d="2">
       <summary>Wo werden meine Daten gespeichert?<span class="faq-icon">+</span></summary>
       <p>Alle Daten bleiben lokal auf deinem Smartphone. Es gibt keinen Server und kein Konto. Später kommt eine optionale Cloud-Sicherung als Premium-Feature.</p>
     </details>
-    <details class="faq-item">
+    <details class="faq-item reveal" data-d="3">
       <summary>Welche Fahrzeuge werden unterstützt?<span class="faq-icon">+</span></summary>
       <p>Aktuell nur Autos (PKW). Motorräder, Wohnmobile und LKW folgen in späteren Versionen.</p>
     </details>
-    <details class="faq-item">
+    <details class="faq-item reveal" data-d="4">
       <summary>Für welches Land ist die App gemacht?<span class="faq-icon">+</span></summary>
       <p>Deutschland – mit HSN/TSN-Erfassung, TÜV/HU-Terminen und SF-Klassen für die Kfz-Versicherung.</p>
     </details>
-    <details class="faq-item">
+    <details class="faq-item reveal" data-d="5">
       <summary>Wie viele Fahrzeuge kann ich verwalten?<span class="faq-icon">+</span></summary>
       <p>Beliebig viele. Ob ein Auto oder zehn – die App skaliert mit dir.</p>
     </details>
-    <details class="faq-item">
+    <details class="faq-item reveal" data-d="6">
       <summary>Gibt es die App auch für iPhone?<span class="faq-icon">+</span></summary>
-      <p>Aktuell nein. myAutoBuch ist nur für Android verfügbar. Eine iOS-Version ist derzeit nicht geplant.</p>
+      <p>myAutoBuch startet zuerst für Android. Eine iOS-Version ist nicht ausgeschlossen – trag dich auf die iOS-Warteliste ein und wir informieren dich, sobald es Neuigkeiten gibt.</p>
     </details>
-    <details class="faq-item">
+    <details class="faq-item reveal" data-d="7">
       <summary>Wann kommt die App in den Play Store?<span class="faq-icon">+</span></summary>
       <p>Der Release wird gerade vorbereitet. Melde dich als Early Adopter an, um früh dabei zu sein.</p>
     </details>
@@ -333,9 +462,9 @@
 </section>
 
 <section id="kontakt" class="contact-section">
-  <h2>Kontakt</h2>
-  <p>Fragen, Feedback oder Fehler gefunden? Schreib uns!</p>
-  <div class="contact-buttons">
+  <h2 class="reveal">Kontakt</h2>
+  <p class="reveal" data-d="1">Fragen, Feedback oder Fehler gefunden? Schreib uns!</p>
+  <div class="contact-buttons reveal" data-d="2">
     <a href="https://forms.office.com/r/3U23NcqqBD" class="btn btn-primary">Formular öffnen</a>
     <a href="mailto:myAutoBuch@outlook.de" class="btn btn-secondary">E-Mail schreiben</a>
   </div>
