@@ -14,7 +14,7 @@
     animatedElements.forEach((element) => element.classList.add("active"));
     return;
   }
-
+  
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
