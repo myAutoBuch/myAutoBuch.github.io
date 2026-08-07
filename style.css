@@ -1248,13 +1248,10 @@ section .lead {
 
 
 /* =========================================================
-   >>> LANDING-REWORK v1.9 – ergaenzende Styles (myAutoBuch) <<<
-   Nutzt das BESTEHENDE .reveal/.active-System deiner Datei.
-   Keine neuen Reveal-Basis-Regeln noetig; nur zusaetzliche
-   Stagger-Delays via data-d, plus alle neuen Sektionen.
-   Karussell ist bewusst OHNE perspective-Property / preserve-3d /
-   mask-image / will-change / backface-visibility gebaut, damit die
-   Screenshots in jedem Modus (auch DevTools-Responsive) scharf bleiben.
+   myAutoBuch – Landing-Page Styles (Reveal-Delays + Sektionen)
+   Stagger-Delays via data-d. Das Karussell nutzt bewusst KEIN
+   perspective-Property / preserve-3d / mask-image / will-change /
+   backface-visibility, damit die Screenshots in jedem Modus scharf bleiben.
    ========================================================= */
 
 /* Stagger-Delays fuer beliebige .reveal-Elemente (per data-d gesteuert) */

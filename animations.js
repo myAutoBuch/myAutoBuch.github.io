@@ -30,14 +30,10 @@
 
 
 /* =========================================================
-   >>> LANDING-REWORK v1.9 – ergaenzende Scripts (myAutoBuch) <<<
-   1) Reveal fuer ALLE .reveal-Elemente (auch die neu im HTML
-      gesetzten wie h2, .warum-visual, .compare-col, .preset-chip,
-      .beta-card, .ios-card, .carousel3d-caption). Nutzt dieselbe
-      .active-Klasse wie dein bestehendes System.
-   2) 3D-Karussell-Logik (scharf: perspective() als Funktion,
-      aktives Bild ohne Transform; pausiert ausserhalb des Viewports).
-   Beide Bloecke sind gekapselt und stoeren deinen Code nicht.
+   myAutoBuch – Landing-Page Scripts
+   1) Scroll-Reveal fuer alle .reveal-Elemente via .active-Klasse.
+   2) 3D-Screenshot-Karussell (perspective() als Funktion, aktives
+      Bild ohne Transform; pausiert ausserhalb des Viewports).
    ========================================================= */
 
 /* 1) Reveal fuer ALLE .reveal-Elemente -> .active */
