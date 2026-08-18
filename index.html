@@ -186,11 +186,19 @@
 </nav>
 
 <!-- Update-Hinweis: verlinkt auf die Changelog-Seite -->
-<div style="padding:16px 20px 0;display:flex;justify-content:center">
-  <a href="changelog.html" style="display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;text-align:center;padding:10px 20px;background:rgba(30,136,229,.12);border:1px solid rgba(100,181,246,.35);border-radius:999px;color:var(--color-primary-light);font-weight:600;font-size:.95rem;text-decoration:none">
-    <span aria-hidden="true">✨</span>
+<style>
+  .update-banner{display:inline-flex;align-items:center;gap:9px;justify-content:center;text-align:left;padding:10px 20px;background:rgba(30,136,229,.12);border:1px solid rgba(100,181,246,.35);border-radius:999px;color:var(--color-primary-light);font-weight:600;font-size:.95rem;line-height:1.3;text-decoration:none}
+  .update-banner .ub-ico,.update-banner .ub-arrow{flex-shrink:0}
+  .update-banner .ub-arrow{font-weight:700}
+  @media (max-width:600px){
+    .update-banner{gap:7px;padding:7px 14px;font-size:.8rem;border-radius:12px}
+  }
+</style>
+<div style="padding:14px 16px 0;display:flex;justify-content:center">
+  <a href="changelog.html" class="update-banner">
+    <span class="ub-ico" aria-hidden="true">✨</span>
     <span>Neu in Version 1.3 – schau dir die Neuigkeiten an</span>
-    <span aria-hidden="true" style="font-weight:700">→</span>
+    <span class="ub-arrow" aria-hidden="true">→</span>
   </a>
 </div>
 
