@@ -21,6 +21,9 @@
 <meta name="twitter:image" content="https://myautobuch.github.io/assets/og-image.jpg">
 <meta name="twitter:image:alt" content="myAutoBuch – Dein digitales Serviceheft">
 <link rel="canonical" href="https://myautobuch.github.io/">
+<link rel="alternate" hreflang="de" href="https://myautobuch.github.io/">
+<link rel="alternate" hreflang="en" href="https://myautobuch.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://myautobuch.github.io/">
 <link rel="icon" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -167,6 +170,7 @@
   ]
 }
 </script>
+<style>.lang-switch{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border:1px solid rgba(100,181,246,.35);border-radius:999px;color:var(--color-primary-light);font-weight:700;font-size:.8rem;text-decoration:none;letter-spacing:.03em;white-space:nowrap}.lang-switch:hover{background:rgba(30,136,229,.14)}.lang-switch .ls-globe{width:14px;height:14px;flex-shrink:0}@media (max-width:600px){.lang-switch{padding:4px 9px;font-size:.72rem}}</style>
 </head>
 <body>
 
@@ -182,7 +186,12 @@
     <li><a href="blog.html">Blog</a></li>
     <li><a href="index.html#kontakt">Kontakt</a></li>
   </ul>
-  <div class="nav-spacer"></div>
+  <div class="nav-spacer">
+    <a href="en/index.html" class="lang-switch" hreflang="en" lang="en" aria-label="View this page in English">
+      <svg class="ls-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c2.5 3 2.5 17 0 20M12 2c-2.5 3-2.5 17 0 20"/></svg>
+      English
+    </a>
+  </div>
 </nav>
 
 <!-- Update-Hinweis: verlinkt auf die Changelog-Seite -->
@@ -238,50 +247,56 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
   <div class="carousel3d-stage" id="c3dStage">
-    <figure class="c3d-item" data-title="Alles zum Fahrzeug" data-text="Kennzeichen, VIN und Kilometerstand immer griffbereit.">
-      <img src="assets/screenshot-1.jpg" alt="Fahrzeug-Detailansicht mit Kennzeichen, VIN, Kilometerstand und Fahrzeugdaten" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Alles zum Fahrzeug" data-text="Foto, Kennzeichen, VIN und Kilometerstand immer griffbereit.">
+      <img src="assets/screenshot-1.jpg?v=1.5" alt="Fahrzeug-Detailansicht mit Foto, Kennzeichen, VIN und Kilometerstand" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Dein Cockpit" data-text="Übersicht, anstehende Termine und Kosten auf einen Blick.">
-      <img src="assets/screenshot-2.jpg" alt="Dashboard mit Fahrzeug-Übersicht, anstehenden Terminen und Kostenverlauf" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Dein Cockpit" data-text="Alle Fahrzeuge, Gesundheit und Kosten auf einen Blick.">
+      <img src="assets/screenshot-2.jpg?v=1.5" alt="Dashboard mit Fahrzeug-Gesundheit, Terminen und Kosten" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Nie wieder TÜV verpassen" data-text="Automatische Erinnerungen für HU und Wartung.">
-      <img src="assets/screenshot-3.jpg" alt="Erinnerungen an TÜV/HU und Wartungstermine mit Fälligkeit" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Neu: Werkstattmodus" data-text="Reifen, Öl, Betriebsstoffe und deine Werkstatt an einem Ort.">
+      <img src="assets/screenshot-3.jpg?v=1.5" alt="Werkstattmodus mit Neon-Schild und Werkzeugwand" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Zahlen, die du verstehst" data-text="Verbrauch, Fahrleistung und Tank-Ranking im Vergleich.">
-      <img src="assets/screenshot-4.jpg" alt="Statistiken mit Monatsvergleich, Tankstellen-Ranking und Fahrleistung" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Reifenmanager" data-text="Profil messen, Verschleiß und Restlaufzeit je Rad.">
+      <img src="assets/screenshot-4.jpg?v=1.5" alt="Reifenmanager mit Profiltiefe je Rad und Verschleiß-Prognose" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Volle Kostenkontrolle" data-text="Ausgaben und CO₂ je Kraftstoff immer im Blick.">
-      <img src="assets/screenshot-5.jpg" alt="Kostenübersicht mit Gesamtausgaben, Tank-Auswertung und CO₂ pro Kraftstoff" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Ersatzteile" data-text="Teilenummern, Preise und Bezugsquellen gespeichert.">
+      <img src="assets/screenshot-5.jpg?v=1.5" alt="Ersatzteil-Liste mit Teilenummern, Preisen und Bezugsquellen" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Jede Tankung erfasst" data-text="Getrennte Auswertung je Kraftstoff und volle Historie.">
-      <img src="assets/screenshot-6.jpg" alt="Tankübersicht mit getrennter Auswertung je Kraftstoff und Tankungs-Historie" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Wartungspläne" data-text="Intervalle nach Zeit und km – die App erinnert dich.">
+      <img src="assets/screenshot-6.jpg?v=1.5" alt="Wartungspläne mit Intervallen für Ölwechsel und Inspektion" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Fahrzeug-Gesundheit" data-text="Ein Score zeigt, wie gepflegt dein Auto wirklich ist.">
-      <img src="assets/screenshot-7.jpg" alt="Fahrzeug-Gesundheits-Score mit HU/TÜV-Status, Wartungen und Score-Verlauf" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Fahrzeug-Gesundheit" data-text="Transparenter Score aus HU, Wartung, km-Stand und Belegen.">
+      <img src="assets/screenshot-7.jpg?v=1.5" alt="Fahrzeug-Gesundheits-Score mit Einzelwertungen und Verlauf" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Lückenlose Service-Historie" data-text="Jede Reparatur mit Datum, Kilometern und Kosten.">
-      <img src="assets/screenshot-8.jpg" alt="Service-Historie als Zeitstrahl mit Klimaservice, Reifenwechsel und Ölwechsel" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Tanken &amp; Verbrauch" data-text="Jede Tankung mit Verbrauch und gefahrenen km.">
+      <img src="assets/screenshot-8.jpg?v=1.5" alt="Tank-Historie mit Verbrauch je Tankung" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Wartung im Griff" data-text="Intervalle aus Vorlagen oder ganz nach deinem Plan.">
-      <img src="assets/screenshot-9.jpg" alt="Wartungspläne mit Intervallen für Ölwechsel, Inspektionen und Reifenwechsel" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Kosten im Griff" data-text="Kosten nach Kategorie und Kosten je 100 km.">
+      <img src="assets/screenshot-9.jpg?v=1.5" alt="Statistik mit Kosten nach Kategorie und Kosten je 100 km" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Deine Fahrleistung" data-text="Kilometer pro Monat und Jahr im klaren Vergleich.">
-      <img src="assets/screenshot-10.jpg" alt="Fahrleistungs-Statistik mit Kilometern pro Monat und Jahresvergleich" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Jeder Euro aufgeschlüsselt" data-text="Service-Arten und sonstige Kosten im Detail.">
+      <img src="assets/screenshot-10.jpg?v=1.5" alt="Aufgeklappte Kostenkategorien mit Service-Arten und sonstigen Kosten" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Alles griffbereit" data-text="Mehrere Fahrzeuge, Foto-Galerie und Datensicherung.">
-      <img src="assets/screenshot-11.jpg" alt="App-Menü mit Fahrzeugauswahl, Foto-Galerie, Erfolgen und Datensicherung" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Tank-Auswertung" data-text="Ø Preis, Verbrauch, CO₂ und Monats-Tankkosten.">
+      <img src="assets/screenshot-11.jpg?v=1.5" alt="Tank-Auswertung mit Durchschnittspreis, Verbrauch, CO₂ und Monatskosten" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Erfolge freischalten" data-text="Pflege deine Historie – und werde dafür belohnt.">
-      <img src="assets/screenshot-12.jpg" alt="Erfolge-Übersicht mit freischaltbaren Abzeichen und Fortschrittsbalken" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Preise &amp; Tankstellen" data-text="Literpreis-Verlauf und deine günstigsten Tankstellen.">
+      <img src="assets/screenshot-12.jpg?v=1.5" alt="Literpreis-Verlauf und Tankstellen-Ranking" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Dein Auto-Jahr" data-text="Alle Ausgaben nach Kategorie, teilbar mit einem Tipp.">
-      <img src="assets/screenshot-13.jpg" alt="Jahresrückblick mit Gesamtausgaben und Aufteilung nach Kategorie" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Fahrleistung" data-text="Jahresfahrleistung laut Versicherung immer im Blick.">
+      <img src="assets/screenshot-13.jpg?v=1.5" alt="Fahrleistung mit Versicherungs-Jahresfahrleistung und Monatsverlauf" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Hell oder dunkel" data-text="Das komplette Dashboard auch im hellen Design.">
-      <img src="assets/screenshot-14.jpg" alt="Dashboard im hellen Design mit Terminen, Fahrzeug-Gesundheit und Kosten" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Prognose Fahrzeugwert" data-text="Behalten oder ersetzen? Eine ehrliche Einschätzung.">
+      <img src="assets/screenshot-14.jpg?v=1.5" alt="Prognose Fahrzeugwert mit Reparaturkosten je Jahr" loading="lazy" width="900" height="1905">
     </figure>
-    <figure class="c3d-item" data-title="Dein Fahrzeug mit Foto" data-text="Eigenes Fahrzeugbild, Kennzeichen, VIN und HSN/TSN.">
-      <img src="assets/screenshot-15.jpg" alt="Fahrzeug-Detailansicht mit Fahrzeugfoto, Kennzeichen, VIN und HSN/TSN" loading="lazy" width="720" height="1524">
+    <figure class="c3d-item" data-title="Jahresrückblick" data-text="Dein Auto-Jahr in Zahlen – zum Teilen.">
+      <img src="assets/screenshot-15.jpg?v=1.5" alt="Jahresrückblick mit Gesamtausgaben und Vergleich zum Vorjahr" loading="lazy" width="900" height="1905">
+    </figure>
+    <figure class="c3d-item" data-title="Mehrere Fahrzeuge" data-text="Autos und Motorräder in einer App.">
+      <img src="assets/screenshot-16.jpg?v=1.5" alt="App-Menü mit mehreren Fahrzeugen und Datensicherung" loading="lazy" width="900" height="1905">
+    </figure>
+    <figure class="c3d-item" data-title="Helles Design" data-text="Hell oder dunkel – ganz wie du magst.">
+      <img src="assets/screenshot-17.jpg?v=1.5" alt="Fahrzeugansicht im hellen Design" loading="lazy" width="900" height="1905">
     </figure>
   </div>
   <button class="carousel3d-nav next" id="c3dNext" aria-label="Nächster Screenshot">
@@ -514,7 +529,7 @@
 <footer class="footer">
   <div class="footer-grid">
     <div class="footer-col"><h4>myAutoBuch</h4><p>Dein digitales Serviceheft. Made in Germany.</p></div>
-    <div class="footer-col"><h4>Links</h4><a href="index.html">Startseite</a><a href="blog.html">Blog</a><a href="changelog.html">Was ist neu</a><a href="privacy.html">Datenschutz</a><a href="imprint.html">Impressum</a></div>
+    <div class="footer-col"><h4>Links</h4><a href="index.html">Startseite</a><a href="blog.html">Blog</a><a href="changelog.html">Was ist neu</a><a href="privacy.html">Datenschutz</a><a href="imprint.html">Impressum</a><a href="en/index.html" hreflang="en" lang="en">English version</a></div>
     <div class="footer-col"><h4>Kontakt</h4><a href="mailto:myAutoBuch@outlook.de">myAutoBuch@outlook.de</a></div>
   </div>
   <div class="footer-bottom">© 2026 myAutoBuch. Alle Rechte vorbehalten.</div>

@@ -1457,3 +1457,21 @@ section .lead {
   .ios-badge{ margin:0 auto; }
   .ios-text h2{ text-align:center; }
 }
+
+/* Sprachumschalter auch auf dem Handy: nur Globus-Symbol (Beschriftung bleibt per aria-label) */
+@media (max-width: 768px) {
+  .nav:has(.lang-switch) { grid-template-columns: auto 1fr auto; }
+  .nav:has(.lang-switch) .nav-spacer { display: block; margin-left: 8px; }
+  .nav:has(.lang-switch) .nav-links { gap: 10px; }
+  .nav .lang-switch { padding: 6px; font-size: 0; gap: 0; }
+  .nav .lang-switch .ls-globe { width: 17px; height: 17px; }
+}
+@media (max-width: 360px) {
+  .nav:has(.lang-switch) .nav-links { gap: 7px; }
+  .nav:has(.lang-switch) .nav-links a { font-size: 0.78rem; }
+}
+/* Lange Einzelwoerter in Ueberschriften (z. B. „Datenschutzerklärung") auf dem Handy trennen statt die Seite zu verbreitern */
+.legal-content h1, .legal-content h2 { hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
+@media (max-width: 768px) { .nav:has(.lang-switch) .nav-links a { white-space: nowrap; } }
+@media (max-width: 400px) { .nav:has(.lang-switch) .nav-links { gap: 8px; } .nav:has(.lang-switch) .nav-links a { font-size: 0.8rem; } }
+@media (max-width: 360px) { .nav:has(.lang-switch) { padding: 12px 12px; } .nav:has(.lang-switch) .nav-links { gap: 6px; } .nav:has(.lang-switch) .nav-links a { font-size: 0.72rem; } .nav:has(.lang-switch) .nav-spacer { margin-left: 5px; } }
